@@ -18,6 +18,7 @@ public class SpringBatchApplication {
 
     @Bean
     private static DataSource getDatasource() {
+        System.out.println("test");
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setMaxActive(100);
